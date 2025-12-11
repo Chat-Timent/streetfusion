@@ -1,0 +1,20 @@
+#topbar {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    
+    display: flex;
+    align-items: center;
+    gap: 200px;
+
+    padding: 0px 50px;
+}
+
+.topbar-logo {
+    width: 150px
+}
+
+.topbar-nav-links {
+    gap: 100px;
+    display: flex;
+    margin-left: auto;
+}
