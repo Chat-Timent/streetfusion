@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,81 @@
 </head>
 
 <body>
-    
+    <!--TOP BAR-->
+
+
+    <main>
+        <form action="" id="form-dispo">
+            <h2>Les formules disponibles</h2>
+
+            <label for="intervention-site">Intervention sur site</label>
+
+            <div class="nbr-personne">
+                <label for="nbr-personne">Nombre de personnes minimum</label>
+                <input type="number" id="nbr-pesonne">
+            </div>
+
+            <div class="menu">
+                <label for="menu">Les menus disponibles</label>
+                <select name="menu" id="menu">
+                    <option value="menu1">menu1</option>
+                    <option value="menu2">menu2</option>
+                    <option value="menu3">menu3</option>
+                    <option value="menu4">menu4</option>
+                    <option value="menu5">menu5</option>
+                </select>
+            </div>
+
+            <div class="tarif">
+
+            </div>
+        </form>
+
+        <form action="" id="contac">
+            <h2>Contacts</h2>
+
+            <div id="nom-prenom">
+                <label for="nom-prenom">Nom et Prénom</label>
+                <input type="text" placeholder="Nom" id="nom">
+                <input type="text" placeholder="Prénom" id="prenom">
+            </div>
+
+            <label for="email">Adresse mail</label>
+            <input type="email">
+
+            <label for="telephone">Numéro</label>
+            <input type="text">
+
+            <div class="evenement">
+                <label for="event">Les événements proposés</label>
+                <select name="event" id="event">
+                    <option value="evenement1">evenement1</option>
+                    <option value="evenement2">evenement2</option>
+                    <option value="evenement3">evenement3</option>
+                    <option value="evenement4">evenement4</option>
+                    <option value="evenement5">evenement5</option>
+                </select>
+            </div>
+
+            <section class="date-hour">
+                <div class="date">
+                    <label for="date">Le :</label>
+                    <input type="date">
+                </div>
+
+                <div class="hour">
+                    <label for="hour">De :</label>
+                    <input type="time" name="debut" id="debut">
+                    <label for="hour">à</label>
+                    <input type="time" name="end" id="end">
+                </div>
+            </section>
+
+            <label for="message">Message ou Remarque</label>
+            <textarea name="message" id="message">
+
+            </textarea>
+        </form>
+    </main>
 </body>
 </html>
