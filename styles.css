@@ -1,1 +1,19 @@
-/* ici topbar, footer et polices communes */
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;     
+    padding: 0;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+/*
+Couleurs que j'ai utilisé : 
+
+Couleur principale / de fond : #2C3E50 (gris/bleu jsp trop)
+Couleur alternative : #2ECC71 (vert menthe pour le coté frais / écolo responsable)
+Ecritures : #ECF0F1 (blanc nacré)
+CTA / boutons importants : #E67E22 (orange)
+
+*/
