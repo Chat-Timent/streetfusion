@@ -13,7 +13,7 @@ const menu = [
         choix: "Burger",
         description: "Burger au fromage à raclette, jambon cru et oignons caramélisés avec son double steak",
         prix: 10.99,
-        image : "../image/street_food_2.jpg",
+        image : "../image/burgerraclette.jpg",
     },
     { 
         id: 3,
@@ -21,7 +21,7 @@ const menu = [
         choix: "Burger",
         description: "Burger au kebab, sauce blanche, salade, tomates et oignons pour les vraies Hommes",
         prix: 11.99,
-        image : "../image/street_food_3.jpg",
+        image : "../image/burgerkebab.jpg",
     },
     { 
         id: 4,
@@ -29,7 +29,7 @@ const menu = [
         choix: "Tacos",
         description: "Tacos crevette avec sa sauce au grumaux",
         prix: 7.99,
-        image : "../image/street_food_4.jpg",
+        image : "../image/tacoscrevette.jpg",
     },
     { 
         id: 5,
@@ -37,15 +37,15 @@ const menu = [
         choix: "Tacos",
         description: "Tacos viande hachée trop cuite épicée et fromage fondu",
         prix: 8.99,
-        image : "../image/street_food_5.jpg",
+        image : "../image/tacoscrame.jpg",
     },
     { 
         id: 6,
-        nom: "Tacos Végétarien", 
+        nom: "Tacos Végé ta rien", 
         choix: "Tacos",
         description: "Tacos aux légumes grillés et guacamole",
         prix: 7.49,
-        image : "../image/street_food_6.jpg",
+        image : "../image/tacosveget.jpg",
     },
     { 
         id: 7,
@@ -53,7 +53,7 @@ const menu = [
         choix: "Accompagnements",
         description: "Frites fraîches coupées à la main",
         prix: 3.99,
-        image : "../image/street_food_7.jpg",
+        image : "../image/frite.jpg",
     },
     { 
         id: 8,
@@ -61,15 +61,15 @@ const menu = [
         choix: "Accompagnements",
         description: "Rondelles d'oignons panées et croustillantes",
         prix: 4.49,
-        image : "../image/street_food_8.jpg",
+        image : "../image/onionring.jpg",
     },
     { 
         id: 9,
-        nom: "Salade César", 
+        nom: "frite de patatete douce", 
         choix: "Accompagnements",
-        description: "Salade fraîche avec sauce césar et parmesan",
+        description: "frite de patate douce maison",
         prix: 5.99,
-        image : "../image/street_food_9.jpg",
+        image : "../image/fritepatatedouce.jpg",
     },
     { 
         id: 10,
@@ -77,23 +77,23 @@ const menu = [
         choix: "boissons",
         description: "Boisson gazeuse classique 33cl",
         prix: 2.50,
-        image : "../image/street_food_10.jpg",
+        image : "../image/coca.jpg",
     },
     { 
         id: 11,
-        nom: "Bannanitron", 
+        nom: "Oasis", 
         choix: "boissons",
-        description: "une boisson fait de bannane et de citron 25cl",
+        description: "Boisson gazeuse à l'orange 33cl",
         prix: 2.50,
-        image : "../image/street_food_10.jpg",
+        image : "../image/oasis.webp",
     },
     { 
         id: 12,
-        nom: "Cacaorange", 
+        nom: "Pepsi", 
         choix: "boissons",
-        description: "Jus d'orange frais pressé avec une touche de cacahuète 25cl",
+        description: "Boisson gazeuse classique 33cl",
         prix: 3.50,
-        image : "../image/street_food_10.jpg",
+        image : "../image/pepsi.jpg",
     },
 ]
 
@@ -150,4 +150,28 @@ function afficherMenu() {
 
 document.addEventListener('DOMContentLoaded', () => {
     afficherMenu();
+
+    const boutonmenu = document.querySelectorAll('.bouton-menu');
+
+    boutonmenu.forEach(bouton => {
+        bouton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const sectionMenu = document.getElementById('menu');
+            if (sectionMenu) {
+                sectionMenu.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    const boutonformule = document.querySelectorAll('.bouton-formule');
+
+    boutonformule.forEach(bouton => {
+        bouton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const sectionformule = document.getElementById('formule-menu');
+            if (sectionformule) {
+                sectionformule.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
 });
